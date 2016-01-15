@@ -3,16 +3,17 @@
 The following problem is copied from: https://code.google.com/codejam/contest/635101/dashboard#s=p0
 ##Problem
 
-On Unix computers, data is stored in directories. There is one root directory, and this might have several directories contained inside of it, each with different names. These directories might have even more directories contained inside of them, and so on.
+On Unix computers, data is stored in *directories*. There is one *root directory*, and this might have several directories contained inside of it, each with different names. These directories might have even more directories contained inside of them, and so on.
 
-A directory is uniquely identified by its name and its parent directory (the directory it is directly contained in). This is usually encoded in a path, which consists of several parts each preceded by a forward slash ('/'). The final part is the name of the directory, and everything else gives the path of its parent directory. For example, consider the path:
+A directory is uniquely identified by its name and its parent directory (the directory it is directly contained in). This is usually encoded in a *path*, which consists of several parts each preceded by a forward slash ('/'). The final part is the name of the directory, and everything else gives the path of its parent directory. For example, consider the path:
 
 ``` 
 /home/gcj/finals
 ```
 
 This refers to the directory with name "finals" in the directory described by "/home/gcj", which in turn refers to the directory with name "gcj" in the directory described by the path "/home". In this path, there is only one part, which means it refers to the directory with the name "home" in the root directory.
-To create a directory, you can use the mkdir command. You specify a path, and then mkdir will create the directory described by that path, but only if the parent directory already exists. For example, if you wanted to create the "/home/gcj/finals" and "/home/gcj/quals" directories from scratch, you would need four commands:
+
+To create a directory, you can use the *mkdir* command. You specify a path, and then *mkdir* will create the directory described by that path, but *only if* the parent directory already exists. For example, if you wanted to create the "/home/gcj/finals" and "/home/gcj/quals" directories from scratch, you would need four commands:
 
 ```
 mkdir /home
@@ -21,7 +22,7 @@ mkdir /home/gcj/finals
 mkdir /home/gcj/quals
 ```
 
-Given the full set of directories already existing on your computer, and a set of new directories you want to create if they do not already exist, how many mkdir commands do you need to use?
+Given the full set of directories already existing on your computer, and a set of new directories you want to create if they do not already exist, how many *mkdir* commands do you need to use?
 
 ##Structure of Input & Output
 
@@ -39,7 +40,7 @@ Each of the paths in the input is formatted as in the problem statement above. S
 
 For each test case, output one line containing "Case #x: y", where x is the case number (starting from 1) and y is the number of mkdir you need.
 
-Limits
+######Limits
 
 1 ≤ **T** ≤ 100.
 No path will have more than 100 characters in it.
@@ -47,12 +48,12 @@ No path will appear twice in the list of directories already on your computer, o
 If a directory is listed as being on your computer, then its parent directory will also be listed, unless the parent is the root directory.
 The input file will be no longer than 100,000 bytes in total.
 
-Small dataset
+######Small dataset
 
 - 0 ≤ **N** ≤ 10.
 - 1 ≤ **M** ≤ 10.
 
-Large dataset
+######Large dataset
 
 - 0 ≤ **N** ≤ 100.
 - 1 ≤ **M** ≤ 100.
