@@ -50,15 +50,15 @@ The input file will be no longer than 100,000 bytes in total.
 
 ######Small dataset
 
-- 0 ≤ **N** ≤ 10.
-- 1 ≤ **M** ≤ 10.
+0 ≤ **N** ≤ 10.  
+1 ≤ **M** ≤ 10.  
 
 ######Large dataset
 
-- 0 ≤ **N** ≤ 100.
-- 1 ≤ **M** ≤ 100.
+0 ≤ **N** ≤ 100.  
+1 ≤ **M** ≤ 100.  
 
-Sample:
+######Sample:
 
 |Input | Output|
 |:----|:------|
